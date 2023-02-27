@@ -19,6 +19,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px gray;
+          box-shadow: 3px 3px 5px 1px gray;
 }
 
 header div.logo {
@@ -85,8 +92,8 @@ main section.backImage {
 }
 
 main section.backImage button.start {
-  background-color: #19BAED;
-  color: white;
+  background-color: #00c1fc;
+  color: black;
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
   border: none;
@@ -155,11 +162,24 @@ main section.second div.card {
   margin: 1rem;
 }
 
-main section.second div.card img {
-  margin: 1rem 0rem;
+main section.second div.card div.image-container {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
+}
+
+main section.second div.card div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main section.second div.card div.image-container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main section.second div.card h4 {
@@ -255,7 +275,7 @@ footer section.link a img {
 }
 
 @media screen and (max-width: 750px) {
-  main section.second section.card div.card img {
+  main section.second section.card div.card div.image-container img {
     width: 35vw;
     height: 35vw;
   }

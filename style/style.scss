@@ -13,6 +13,11 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px gray;
 
     div.logo{
         display: flex;
@@ -60,8 +65,8 @@ main{
         text-align: center;
 
         button.start{
-            background-color: #19BAED;
-            color: white;
+            background-color: #00c1fc;
+            color: black;
             padding: 0.75rem 1.5rem;
             font-size: 1.5rem;
             border:none;
@@ -101,6 +106,7 @@ main{
             min-height: 60vh;
             flex-wrap: wrap;
         }
+
         div.card{
             display: flex;
             flex-direction: column;
@@ -109,11 +115,20 @@ main{
             flex: 1 1 300px;
             margin: 1rem;
 
-            img{
-                margin: 1rem 0rem;
+            div.image-container{
+                overflow: hidden;
                 width: 15vw;
                 height: 15vw;
                 border-radius: 50%;
+                img{
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transition: all 0.2s;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
             }
 
             h4{
@@ -204,9 +219,11 @@ footer{
         section.second{
             section.card{
                 div.card{
-                    img{
-                        width: 35vw;
-                        height: 35vw;
+                    div.image-container{
+                        img{
+                            width: 35vw;
+                            height: 35vw;
+                        }
                     }
                 }
             }
