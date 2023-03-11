@@ -19,13 +19,6 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  -webkit-box-shadow: 3px 3px 5px 1px gray;
-          box-shadow: 3px 3px 5px 1px gray;
 }
 
 header div.logo {
@@ -98,6 +91,7 @@ main section.backImage button.start {
   font-size: 1.5rem;
   border: none;
   border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 main section.backImage h3 {
@@ -143,7 +137,7 @@ main section.second section.card {
       flex-wrap: wrap;
 }
 
-main section.second div.card {
+main section.second section.card div.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,14 +156,14 @@ main section.second div.card {
   margin: 1rem;
 }
 
-main section.second div.card div.image-container {
+main section.second section.card div.card div.image-container {
   overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
 }
 
-main section.second div.card div.image-container img {
+main section.second section.card div.card div.image-container img {
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
@@ -177,21 +171,21 @@ main section.second div.card div.image-container img {
   transition: all 0.2s;
 }
 
-main section.second div.card div.image-container img:hover {
+main section.second section.card div.card div.image-container img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-main section.second div.card h4 {
+main section.second section.card div.card h4 {
   margin: 1rem 0rem;
   font-size: 2rem;
 }
 
-main section.second div.card p {
+main section.second section.card div.card p {
   font-size: 1.25rem;
 }
 
-main section.second div.card a {
+main section.second section.card div.card a {
   margin: 1rem 0rem;
   text-decoration: none;
   background-color: #09777D;
@@ -275,7 +269,7 @@ footer section.link a img {
 }
 
 @media screen and (max-width: 750px) {
-  main section.second section.card div.card div.image-container img {
+  main section.second section.card div.card img {
     width: 35vw;
     height: 35vw;
   }
