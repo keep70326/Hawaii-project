@@ -19,6 +19,15 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px gray;
+          box-shadow: 3px 3px 5px 1px gray;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 header div.logo {
